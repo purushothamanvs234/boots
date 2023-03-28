@@ -1,2 +1,147 @@
-# boots
-bugging find
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+<script>
+        function display(value) {
+	document.getElementById('result').value += value;
+}
+
+function calculate() {
+	let result = eval(document.getElementById('result').value);
+	document.getElementById('result').value = result;
+}
+
+function clearDisplay() {
+	document.getElementById('result').value = '';
+}
+
+    </script>
+    <h1 style="color: #944245;" align="center">CALCULATOR</h1>
+</head>
+
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="calculator">
+		<div class="display">
+			<input type="text" id="result" readonly>
+		</div>
+		<div class="buttons">
+			<button onclick="display('7')">7</button>
+			<button onclick="display('8')">8</button>
+			<button onclick="display('9')">9</button>
+			<button onclick="display('/')">/</button>
+            
+			<button onclick="display('4')">4</button>
+			<button onclick="display('5')">5</button>
+			<button onclick="display('6')">6</button>
+			<button onclick="display('*')">*</button>
+            
+			<button onclick="display('1')">1</button>
+			<button onclick="display('2')">2</button>
+			<button onclick="display('3')">3</button>
+			<button onclick="display('-')">-</button>
+            
+			<button onclick="display('0')">0</button>
+			<button onclick="display('.')">.</button>
+			<button onclick="calculate()">=</button>
+			<button onclick="display('+')">+</button>
+            
+			<button onclick="clearDisplay()">C</button>
+		</div>
+	</div>
+
+<style>
+
+body {
+             background-image: url("OIP.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+   .calculator {
+	width: 360px;
+	margin: 0 auto;
+	padding: 30px;
+	background-color: #000;
+	color: #fff;
+	font-family: Arial, sans-serif;
+}
+
+.display {
+	margin-bottom: 20px;
+}
+
+input[type="text"] {
+	background-color: #141414;
+	color: #fff;
+	border: none;
+	padding: 20px;
+	font-size: 30px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+button {
+	padding: 20px;
+	background-color: #e50914;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 30px;
+	box-sizing: border-box;
+}
+
+.operator {
+	background-color: #8c8c8c;
+}
+
+.number:hover,
+.operator:hover,
+.equals:hover {
+	background-color: #e50914;
+}
+
+.equals {
+	background-color: #b9000d;
+}
+
+.buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+}
+
+@media (max-width: 600px) {
+	.calculator {
+		width: 200px;
+		padding: 20px;
+	}
+
+	input[type="text"] {
+		padding: 10px;
+		font-size: 20px;
+	}
+
+	button {
+		padding: 10px;
+		font-size: 20px;
+	}
+}
+
+</style>
+
+</body>
+</html>
+
+</body>
+</html>
